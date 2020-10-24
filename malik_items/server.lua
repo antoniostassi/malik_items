@@ -67,7 +67,7 @@ VorpInv.RegisterUsableItem("tent", function(data)
 end)
 
 VorpInv.RegisterUsableItem("consumable_meat_greavy", function(data)
-    Vorp.Inv.subItem(data.source, "consumable_meat_greavy", 1)
+    VorpInv.subItem(data.source, "consumable_meat_greavy", 1)
     TriggerClientEvent("vorp:TipRight", data.source, "You ate some meat", 5000)
     TriggerClientEvent("malik:peach", data.source)
 
